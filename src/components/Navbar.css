@@ -1,0 +1,65 @@
+
+:root {
+    --ff-primary: 'arvo';
+    --clr-lightgreen: #D3EFBD;
+    --clr-darkgreen: #2E3532;
+    --clr-red: #ef233c;
+    --clr-white: #ffffff;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 70%;
+    margin: 2px auto;
+    font-size: 1.2rem;
+    background-color: var(--clr-darkgreen);
+    color: var(--clr-white);
+}
+
+.nav-logo {
+    font-size: 2.4rem;
+    margin-top: 10px;
+    color: var(--clr-white);
+    
+}
+
+.nav-heading {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 0px 25px;
+}
+
+a {
+    color: var(--clr-white);
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+a::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background:var(--clr-red);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
