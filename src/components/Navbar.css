@@ -8,20 +8,23 @@
 }
 
 .navbar {
+    top: 0;
+    position: sticky;
+    background-color: var(--clr-darkgreen);
+}
+.navbar-container {
+    max-width: 75%;
     display: grid;
     grid-template-columns: auto auto;
-    max-width: 70%;
-    margin: 2px auto;
+    margin: 0px auto;
     font-size: 1.2rem;
-    background-color: var(--clr-darkgreen);
     color: var(--clr-white);
 }
 
 .nav-logo {
     font-size: 2.4rem;
     margin-top: 10px;
-    color: var(--clr-white);
-    
+    color: var(--clr-white); 
 }
 
 .nav-heading {
@@ -37,7 +40,7 @@ li {
     padding: 0px 25px;
 }
 
-a {
+.a-link {
     color: var(--clr-white);
     position: relative;
     display: block;
@@ -46,7 +49,7 @@ a {
     transition: 0.5s;
 }
 
-a::after {
+.a-link::after {
     position: absolute;
     content: '';
     top: 100%;

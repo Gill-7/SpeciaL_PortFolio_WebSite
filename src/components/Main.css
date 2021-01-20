@@ -1,3 +1,5 @@
+
+
 *,
 *::before,
 *::after {
@@ -5,11 +7,12 @@
 }
 :root {
     --ff-primary: 'Rubik', sans-serif;
-    --clr-lightgreen: #abeb7a;
-    --clr-darkgreen: #2E3532;
+    --clr-lighgreen: #588157;
+    --clr-darkgreen: #32473e;
     --clr-red: #ef233c;
     
 }
+
 
 .main {
     padding: 13rem;
@@ -22,11 +25,10 @@
     color: var(--clr-darkgreen);
     margin: 0 auto;
     font-weight: bold;
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     text-align: center;
     text-shadow: 0px 16px 3px rgba(144, 150, 150, 0.25);}
 
 .name {
     color: var(--clr-red);
 } 
-

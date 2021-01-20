@@ -5,15 +5,16 @@ import {SiJustgiving} from 'react-icons/si'
 function Navbar() {
     return (
         <nav className='navbar'>
-            <div className='nav-logo'>
-                <SiJustgiving />
+            <div className='navbar-container'>
+                <div className='nav-logo'>
+                    <SiJustgiving />
+                </div>
+                <ul className='nav-heading'>
+                    <li><a className='a-link' href='./home'>Home</a></li>
+                    <li><a className='a-link' href='./skills'>Skills</a></li>
+                    <li><a className='a-link' href='./projects'>Projects</a></li>
+                </ul>
             </div>
-            <ul className='nav-heading'>
-                <li><a href='./home'>Home</a></li>
-                <li><a href='./skills'>Skills</a></li>
-                <li><a href='./projects'>Projects</a></li>
-            </ul>
-            
         </nav>
     )
 }

@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.home,
+.projectspage,
+.skillspage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.skillspage {
+    /* background-image: url('/images/europe4.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat; */
+    font-size: 100px;
+}
+  
+.projectspage {
+    /* background-image: url('/images/europe5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    font-size: 100px;
+}

@@ -8,12 +8,13 @@
 }
 
 body {
-    background-color: var(--clr-darkgreen);
     font-family: var(--ff-prime);
 }
 
 .container {
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: var(--clr-darkgreen);
 }
 
 .heading {
