@@ -20,11 +20,11 @@ function Projects() {
                             path='https://github.com/Gill-7/react_todo_app'
                         />
                     </ul>
-                    <ul className='projects_items'>
+                    <ul className='cards_items'>
                         <ProjectsCard 
-                            src='image/projects/paris.jpg'
-                            text='Europe Travel'
-                            path='https://github.com/Gill-7/Europe_Travel'
+                            src='image/projects/pac.png'
+                            text='Pacman'
+                            path='https://github.com/Gill-7/PAc-ManGame'
                         />
                         <ProjectsCard 
                             src='image/projects/todo.jpg'
@@ -40,7 +40,7 @@ function Projects() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Projects

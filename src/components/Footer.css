@@ -1,0 +1,60 @@
+.footer {
+    background-color: black;
+    padding: 1.5rem 0 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+.footer_contact {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+}
+
+.contact {
+    font-size: 1.3rem;
+    margin-bottom: 1rem ;
+}
+
+.contact_info {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts {
+        margin-bottom: 0.7rem;
+    }
+}
+
+.contact_email > span,
+.contact_number > span {
+    margin-right: 10px;
+    position: relative;
+    top: 6.5px;
+    font-size: 1.5rem;
+}
+
+.social_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social_link > .social {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 7px;
+}
+
+.social:hover,
+.contacts:hover {
+    color: rgb(236, 236, 113);
+}
