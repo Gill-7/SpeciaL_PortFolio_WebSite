@@ -28,16 +28,23 @@
 	text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
 	  1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
 	  5px 13px 15px rgb(0, 0, 0);
-  }
-  
-  .main-heading:hover {
+}
+
+.main-heading:hover {
 	transition: 0.3s;
-	transform: scale(1.1)translate(0%, 10%);
+	transform: scale(1.1) translate(0%, 10%);
 	text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
 	  1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
 	  1px -8px 0 grey, 5px -13px 15px rgb(0, 0, 0), 5px -13px 25px #808080;
-  }
+}
   
+@media only screen and (max-width: 700px) {
+	.main-heading {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 
 .name {
     color: var(--clr-dark);
@@ -93,7 +100,6 @@
 	left: -10%;
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
-	
 	animation-name: fly-right-one;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
