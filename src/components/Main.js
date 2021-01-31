@@ -7,8 +7,8 @@ function Main() {
         <div className='main'>
             
             <h1 className='main-heading'>
-                Hello, I'm <span className='name'>Gillpreet Singh</span>.<br />
-                I'm a <span className='profession'>front-end developer</span>.
+                Hello, I'm <span className='name'>Gillpreet Singh.</span><br />
+                I'm a <span className='profession'>front-end developer.</span>
             </h1>
 
             <div class="bird-container bird-container--one">

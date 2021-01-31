@@ -1,11 +1,24 @@
-
+.about {
+    background-color: var(--clr-dark);
+}
 .about_container {
-    font-size: 2rem;
-    padding: 10rem 0;
     display: grid;
-    grid-template-columns: 35% 1fr;
+    grid-template-columns: 30% 60%;
+    grid-gap: 1.5rem;
     text-align: center;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
     border: 1px solid red;
+}
+
+.about_heading {
+    font-size: 4rem;
+}
+
+.about_text {
+    font-size: 1.3rem;
 }

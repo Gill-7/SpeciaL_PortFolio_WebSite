@@ -1,23 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { SiJustgiving } from 'react-icons/si'
 import './Navbar.css'
-import {SiJustgiving} from 'react-icons/si'
 
-function Navbar() {
-    return (
-        <nav className='navbar'>
-            <div className='navbar-container'>
-                <div className='nav-logo'>
-                    <SiJustgiving />
+class Navbar extends Component {
+    
+    state = { clicked: false }
+
+    handleClick = () => {
+        this.setState({
+            clicked: !this.state.clicked
+        })
+    }    
+
+    render() {
+        return (
+            <nav className='navbar'>
+                <a className='nav-logo' href='/home'><SiJustgiving /></a>
+                <div className='menu-icon' onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
-                <ul className='nav-heading'>
-                    <li><a className='a-link' href='./home'>Home</a></li>
-                    <li><a className='a-link' href='./skills'>Skills</a></li>
-                    <li><a className='a-link' href='./projects'>Projects</a></li>
-                    <li><a className='a-link' href='./about'>About Me</a></li>
+                <ul className={this.state.clicked ? 'nav-heading active' : 'nav-heading'}>
+                    <li><a className='nav-link' href='./home'>Home</a></li>
+                    <li><a className='nav-link' href='./skills'>Skills</a></li>
+                    <li><a className='nav-link' href='./projects'>Projects</a></li>
+                    <li><a className='nav-link' href='./about'>About Me</a></li>
                 </ul>
-            </div>
-        </nav>
-    )
+            </nav>
+        )
+    }
 }
 
 export default Navbar
