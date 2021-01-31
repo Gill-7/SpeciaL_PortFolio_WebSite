@@ -1,4 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --clr-green: #379683;
+    --clr-white: #EDF5E1;
+    --clr-dark: #05386B;
+    --clr-light:#e5e5e5;
 }

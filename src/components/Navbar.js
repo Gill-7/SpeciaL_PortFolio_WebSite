@@ -13,6 +13,7 @@ function Navbar() {
                     <li><a className='a-link' href='./home'>Home</a></li>
                     <li><a className='a-link' href='./skills'>Skills</a></li>
                     <li><a className='a-link' href='./projects'>Projects</a></li>
+                    <li><a className='a-link' href='./about'>About Me</a></li>
                 </ul>
             </div>
         </nav>

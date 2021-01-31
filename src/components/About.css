@@ -1,0 +1,11 @@
+
+.about_container {
+    font-size: 2rem;
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}

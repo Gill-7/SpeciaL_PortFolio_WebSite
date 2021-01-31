@@ -1,25 +1,11 @@
-:root {
-    --ff-prime: 'Rubik', sans-serif;
-    --clr-lightgreen: #abeb7a;
-    --clr-darkgreen: #2E3532;
-    --clr-red: #ef233c;
-    --clr-white: #ffffff;
-    
-}
-
-body {
-    font-family: var(--ff-prime);
-}
-
 .container {
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: var(--clr-darkgreen);
+    padding: 6rem 0;
+    background-color: var(--clr-light);
 }
 
 .heading {
     text-align: center;
-    color: var(--clr-white);
+    color: var(--clr-dark);
     padding: 1rem;
     font-size: 2.35rem;
     text-shadow: 1px 1px 10px #656565;
@@ -33,7 +19,7 @@ body {
     height: 4px;
     bottom: 0;
     transform: translateX(-95%);
-    background-color: var(--clr-red);
+    background-color: var(--clr-dark);
 }
 
 .skills {
@@ -49,8 +35,19 @@ body {
 
 .skills-main {
     padding: 1rem;
-    color: var(--clr-white);
+    color: var(--clr-dark);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .skills {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2.5rem;
+    }
+    .skills-main {
+        margin: 0 30px;
+    }
 }
 
 .skills-main:hover > .skills-logo::after,
@@ -79,7 +76,7 @@ body {
     width: 0;
     height: 4px;
     border-radius: 2px 0 0 2px;
-    background-color: var(--clr-red);
+    background-color: var(--clr-dark);
     transition: .5s;
 }
 
@@ -91,12 +88,12 @@ body {
     width: 0;
     height: 4px;
     border-radius: 0 2px 2px 0;
-    background-color: var(--clr-red);
+    background-color: var(--clr-dark);
     transition: .5s;
 }
 
 .skills-logo h3 {
-    color: var(--clr-white);
+    color: var(--clr-dark);
     margin-top: 0.5rem;
     font-size: 1.2rem;
 }
