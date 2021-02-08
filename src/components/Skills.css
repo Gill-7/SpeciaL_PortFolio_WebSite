@@ -1,5 +1,7 @@
+
+
 .container {
-    padding: 6rem 0;
+    padding: 5.5rem 0;
     background-color: var(--clr-light);
 }
 
@@ -107,3 +109,77 @@
 .img {
     width: 75px;
 }
+
+.skills_abilities {
+    text-align: center;
+    background-color: var(--clr-light);
+}
+
+.skills_contain {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    font-size: 1.1rem;
+    align-items: start;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+}
+
+@media (max-width: 900px) {
+    .skills_contain {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .skills_have {
+        margin-bottom: 1.5rem;
+    }
+    .skills_learn {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.skills_softs,
+.skills_hards {
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+.skills_soft, 
+.skills_hard {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    color: black;
+    flex: 1;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(14, 197, 253) 0, rgb(14, 197, 253) 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background 0.5s;
+}
+.skills_soft:hover,
+.skills_hard:hover {
+    background-size: 100% 100%;
+
+}
+
+.ski{
+    background-position: 0 0.2em;
+    box-shadow: inset 0 -.5em 0 0 var(--clr-light);
+  }
+
+.skills_contain li {
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 0.4rem;
+}
+
+.skills_head {
+    padding-bottom: 1.4rem;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+

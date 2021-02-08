@@ -29,7 +29,7 @@ h1 {
 .cards_item {
     display: flex;
     flex: 1;
-    margin: 0 0.5rem;
+    margin: 0 0.8rem;
 }
 
 .cards_item_link {

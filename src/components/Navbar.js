@@ -15,12 +15,12 @@ class Navbar extends Component {
     render() {
         return (
             <nav className='navbar'>
-                <a className='nav-logo' href='/home'><SiJustgiving /></a>
+                <a className='nav-logo' href='/'><SiJustgiving /></a>
                 <div className='menu-icon' onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
                 <ul className={this.state.clicked ? 'nav-heading active' : 'nav-heading'}>
-                    <li><a className='nav-link' href='./home'>Home</a></li>
+                    <li><a className='nav-link' href='./'>Home</a></li>
                     <li><a className='nav-link' href='./skills'>Skills</a></li>
                     <li><a className='nav-link' href='./projects'>Projects</a></li>
                     <li><a className='nav-link' href='./about'>About Me</a></li>
