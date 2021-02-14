@@ -20,7 +20,7 @@ function Footer() {
                         <a className='social github-link' href='https://github.com/Gill-7'><AiOutlineGithub /></a>
                     </div>
                     <div className='footer-rights'>
-                        <p>2020 All Rights Reserved</p>
+                        <p>2021 All Rights Reserved</p>
                     </div>
                 </div>
             </div>

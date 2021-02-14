@@ -4,7 +4,7 @@ function ProjectsCard(props) {
     return (
         <>
             <li className='cards_item'>
-                <a className='cards_item_link' href={props.path}>
+                <a className='cards_item_link' href={props.path} target="_blank" rel="noopener noreferrer">
                     <figure className='cards_item_pic-wrap'>
                         <img
                             className='cards_item_img'

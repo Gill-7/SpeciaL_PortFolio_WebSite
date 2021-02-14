@@ -12,29 +12,29 @@ function Projects() {
                         <ProjectsCard 
                             src='image/projects/netflix.jpg'
                             text='Netflix React Project'
-                            path='https://github.com/Gill-7/Netflix_React_Project'
+                            path='https://determined-franklin-113754.netlify.app/'
                         />
                         <ProjectsCard 
                             src='image/projects/paris.jpg'
                             text='Europe Travel'
-                            path='https://github.com/Gill-7/Europe_Travel'
+                            path='https://romantic-wilson-bc730f.netlify.app'
                         />
                     </ul>
                     <ul className='cards_items'>
+                        <ProjectsCard 
+                            src='image/projects/todo.jpg'
+                            text='Todo App'
+                            path='https://upbeat-brattain-45e4f6.netlify.app/'
+                        />
                         <ProjectsCard 
                             src='image/projects/pac.png'
                             text='Pacman'
                             path='https://github.com/Gill-7/Pac-ManGame'
                         />
                         <ProjectsCard 
-                            src='image/projects/todo.jpg'
-                            text='Todo App'
-                            path='https://github.com/Gill-7/react_todo_app'
-                        />
-                        <ProjectsCard 
-                            src='image/projects/movie.jpg'
-                            text='Movie Search'
-                            path='https://github.com/Gill-7/react_movie_search'
+                            src='image/projects/img.jpg'
+                            text='Recipe App'
+                            path='https://gifted-minsky-45dd72.netlify.app/'
                         />
                         
                     </ul>
