@@ -1,5 +1,5 @@
 .main-heading {
-	color: #ffffff;
+	color: #59662e;
 	white-space: nowrap;
 	position: absolute;
 	text-align: center;
@@ -9,7 +9,7 @@
 	font-family: var(--ff-primary);
 	letter-spacing: 0.05em;
 	transition: 0.3s;
-	text-shadow: -5px 2px 1px rgba(206,89,55,0.60);
+	text-shadow: -5px 2px 1px rgba(245, 153, 125, 0.6);
 }
 
 .main-heading:hover {
@@ -23,6 +23,7 @@
 		flex-direction: column;
 		font-size: 2.5rem;
 		color: #e5e5e5;
+		text-shadow: none;
 	}
 	.main-heading:hover {
 		transition: 0.3s;
@@ -33,12 +34,14 @@
 @media only screen and (max-width: 500px) {
 	.main-heading {
 		font-size: 2.0rem;
+		text-shadow: none;
 	}
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 359px) {
 	.main-heading {
-		font-size: 1.7rem;
+		font-size: 1.6rem;
+		text-shadow: none;
 	}
 }
 

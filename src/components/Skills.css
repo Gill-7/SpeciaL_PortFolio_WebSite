@@ -14,7 +14,6 @@
     color: var(--clr-dark);
     padding: 1rem 0;
     font-size: 2.35rem;
-    text-shadow: 1px 1px 10px #656565;
     position: relative;
 } 
 
@@ -129,6 +128,12 @@
 }
 
 @media (max-width: 900px) {
+    .heading {
+        font-size: 2.15rem;
+    }
+    .heading::after {
+        width: 90px;
+    }
     .skills_contain {
         display: flex;
         flex-direction: column;
@@ -140,6 +145,12 @@
     }
     .skills_learn {
         margin-bottom: 1.5rem;
+    }
+    .img {
+        width: 65px;
+    }
+    .skills-logo h3 {
+        font-size: 1rem;
     }
 }
 
