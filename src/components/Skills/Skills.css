@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@800&display=swap");
+
+.section {
+  margin: 4rem 0 6rem 0;
+  color: #ffffff;
+}
+.section-main-heading {
+  color: #64ffda;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 4rem;
+  margin: 2rem 0 2.5rem 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  text-shadow: -2px 0 #111827, 0 -2px #111827, 2px 0 #111827, 0 2px #111827,
+    2px 2px #111827, -2px -2px #111827, -2px 2px #111827, 2px -2px #111827,
+    4px 4px #faa307;
+}
+
+.section--top {
+  display: grid;
+  width: 65%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #0e2343;
+  border: 1.5px solid white;
+  border-radius: 20px;
+}
+
+.section--data {
+  border-right: 1px solid #454545;
+  padding: 4rem 3rem;
+}
+
+.section--data:last-child {
+  border-right: none;
+}
+
+.section--top img {
+  width: 150px;
+  height: 150px;
+}
+
+.section--heading {
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #1fffcb;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+
+.section--description {
+  font-weight: 100;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-top: 2.2rem;
+  color: #ced4da;
+}
+
+.section--lang--title {
+  margin-top: 2.2rem;
+  color: #1fffcb;
+  font-size: 1.1rem;
+}
+
+.section--lang--name {
+  font-weight: 100;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-top: 0.8rem;
+  color: #ced4da;
+  border-right: none;
+}
+
+.section--lang--name p {
+  margin-bottom: 6px;
+}
+
+.section--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.section--link {
+  color: #000000;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.9rem 3rem;
+  text-decoration: none;
+  background-color: #64ffda;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.section--link:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1300px) {
+  .section {
+    margin: 2rem 0 4rem 0;
+    color: #ffffff;
+  }
+  .section-main-heading {
+    padding: 1rem 0;
+    font-size: 2.7rem;
+  }
+  .section--top {
+    width: 85%;
+  }
+  .section--data {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    margin: 4rem 0 2rem 0;
+  }
+  .section--top {
+    display: grid;
+    width: 75%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .section-main-heading {
+    padding: 1rem 0;
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+  .section--data {
+    border-bottom: 1px solid #454545;
+    border-right: none;
+    padding: 2rem 1rem;
+  }
+  .section--top img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .section--data:last-child {
+    border-bottom: none;
+    padding: 2rem 1rem 0 1rem;
+  }
+  .section--heading {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section {
+    margin: 1rem 0 0 0;
+    color: #ffffff;
+  }
+  .section--top {
+    min-width: 90%;
+  }
+
+  .section--description {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+  }
+  .section--data {
+    border-right: 1px solid #454545;
+    padding: 2rem 1rem;
+  }
+  .section--data:last-child {
+    border-bottom: none;
+    padding: 2rem 1rem 0rem 1rem;
+  }
+
+  .section--lang--title {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .section--lang--name {
+    font-size: 0.95rem;
+    line-height: 1.7rem;
+    margin-top: 0.7rem;
+    color: #ced4da;
+  }
+
+  .section--lang--name p {
+    margin-bottom: 4px;
+  }
+  .section--lang--name:last-child {
+    margin-bottom: 0;
+  }
+
+  .section--btn {
+    margin: 3rem 0;
+  }
+
+  .section--link {
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+  }
+}

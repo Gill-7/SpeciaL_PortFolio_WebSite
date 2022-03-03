@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");
+
+.navbar {
+  height: 85px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  margin: 0 auto;
+  color: #000;
+}
+
+.nav-logo {
+  justify-content: center;
+}
+
+.nav-logo-text {
+  font-size: 1.7rem;
+  font-family: "Caveat", cursive;
+  color: #000;
+  margin-top: 3px;
+  letter-spacing: 2px;
+  transform: scale(0.9, 0.98);
+}
+
+.nav-logo-text::before {
+  content: "<> ";
+}
+.nav-logo-text::after {
+  content: " </>";
+}
+
+.nav-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-heading ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-link {
+  color: #000;
+  font-family: "Jaldi", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  position: relative;
+  display: block;
+  transition: 0.4s;
+  transform: scale(1, 0.9);
+}
+
+.nav-link::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-heading div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.socials {
+  color: #000;
+  font-size: 1.2rem;
+  margin: 0 7px;
+  position: relative;
+  display: block;
+  transition: 0.5s;
+  transform: scale(1, 0.9);
+}
+
+.socials::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+.socials:hover::after {
+  transform: scaleX(1);
+  color: #000;
+  transform-origin: left;
+}
+
+.fa-bars {
+  color: #faa307;
+  font-size: 1.1rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .navbar {
+    width: 95%;
+  }
+
+  .nav-heading {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -100%;
+    transition: right 0.6s ease-out;
+  }
+
+  .nav-heading.active {
+    background-color: #0a192f;
+    right: 0;
+    opacity: 1;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 35vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    box-shadow: rgba(100, 255, 218, 0.4) -5px 5px,
+      rgba(100, 255, 218, 0.3) -10px 10px;
+  }
+
+  .nav-heading ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-heading div {
+    display: flex;
+    margin-top: 4px;
+  }
+
+  .nav-link {
+    text-align: center;
+    color: #64ffda;
+  }
+
+  .nav-link::after {
+    background: #fff;
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .menu-icon {
+    display: inline;
+    right: 0;
+    position: fixed;
+    margin-right: 15px;
+    font-size: 1.4rem;
+    z-index: 11;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+  }
+
+  .socials {
+    padding-top: 0.5rem;
+    color: #64ffda;
+  }
+  .socials::after {
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    grid-template-columns: 0.8fr 1fr;
+  }
+  .nav-logo-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-logo-text {
+    font-size: 1.1rem;
+    border: 1px solid red;
+  }
+}
