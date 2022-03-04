@@ -6,7 +6,7 @@ import Slide from "react-reveal/Slide";
 function Main() {
   return (
     <div className="main">
-      <img src="./image/alonetreesky.jpg" alt="mountain" className="main-img" />
+      <img src="./image/aloneTree.jpg" alt="mountain" className="main-img" />
       <div className="main-header">
         <Slide bottom>
           <div className="main-header-top">
