@@ -6,19 +6,18 @@ import Slide from "react-reveal/Slide";
 function Main() {
   return (
     <div className="main">
-      <img src="./image/alonetree.jpg" alt="mountain" className="main-img" />
-      {/* <source src="./image/trees.mp4" type="video/mp4" /> */}
+      <img src="./image/alonetreesky.jpg" alt="mountain" className="main-img" />
       <div className="main-header">
         <Slide bottom>
           <div className="main-header-top">
             <div className="main-header-name ">
-              <p>Hi, I am</p>
+              <p className="main-header-para">Hi, I am</p>
 
               <h1 className="main-header-myname">Gillpreet Singh</h1>
               <div className="main-header-profession">Front-end Dev</div>
             </div>
             <img
-              src="./image/photo.jpg"
+              src="./image/picture.jpg"
               alt="dune-arakis"
               className="main-heading-img"
             />

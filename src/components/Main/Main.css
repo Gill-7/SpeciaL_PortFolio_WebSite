@@ -8,7 +8,7 @@
 .main-img {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 750px;
   object-fit: cover;
   background-size: 100%, 100%;
   background-position: center center;
@@ -22,22 +22,20 @@
 
 .main-header {
   position: absolute;
-}
-
-.main-header {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-12%, -50%);
 }
 
 .main-header-top {
-  display: flex;
-  width: 765px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  /* width: 700px; */
+  /* width: 765px; */
 }
 
 .main-heading-img {
-  width: 240px;
+  width: 100%;
   height: 264px;
   object-fit: cover;
   z-index: 1;
@@ -45,43 +43,45 @@
 }
 
 .main-header-name p {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #000;
   font-weight: 100;
   margin-right: 1rem;
   position: relative;
-  top: 0.6rem;
+  top: 1rem;
   text-align: right;
   margin-top: 1rem;
 }
 
 .main-header-myname {
-  font-size: 3.9rem;
+  font-size: 3.5rem;
+  position: relative;
+  top: 0.5rem;
   color: #000;
   font-weight: 900;
   font-family: "Lato", sans-serif;
   margin-top: 0rem;
-  letter-spacing: 1px;
-  transform: scale(0.94, 1.1);
+  margin-right: 1rem;
+  letter-spacing: 0.7px;
   text-align: right;
 }
 
 .main-header-profession {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   height: 2.7rem;
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  margin-left: 1rem;
   justify-content: left;
   background-color: #faa307;
   color: #000000;
   font-weight: 500;
   padding-left: 0.6rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
   align-self: start;
-  width: calc(100% + 16rem);
+  width: calc(100% + 17rem);
 }
 
 // BIRD
@@ -190,14 +190,15 @@
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1470px) {
   .main-header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .main-header-top {
-    width: 680px;
+    width: 630px;
+    margin: 0 auto;
   }
 
   .main-header-name {
@@ -212,68 +213,81 @@
   }
   .main-header-myname {
     font-size: 3rem;
-    margin-top: 1.2rem;
   }
   .main-header-profession {
     font-size: 1.3rem;
     position: relative;
-    margin-top: 1.2rem;
     align-self: start;
-    width: calc(100% + 15rem);
+    width: calc(100% + 14rem);
   }
   .main-heading-img {
     width: 200px;
-    height: 224px;
+    height: 230px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .main-header-name p {
-    font-size: 2.5rem;
-  }
-  .main-header-myname {
-    font-size: 2.5rem;
+  .main-img {
+    height: 750px;
   }
   .main-header-top {
-    width: 585px;
+    text-align: center;
+    width: 100%;
+    min-width: 534px;
+  }
+  .main-header-name p {
+    font-size: 2.3rem;
+    margin-right: 0.7rem;
+  }
+  .main-header-myname {
+    font-size: 2.3rem;
+    margin-right: 0.7rem;
+  }
+  .main-header-profession {
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: calc(100% + 13.5rem);
   }
 }
 
 @media screen and (max-width: 600px) {
+  .main-img {
+    height: 750px;
+  }
   .main-header {
-    width: 75%;
-    top: 7rem;
+    top: 6rem;
     left: 50%;
-    transform: translate(-50%, 1rem);
+    transform: translate(-50%, 2rem);
+    width: 80%;
   }
   .main-header-top {
-    width: 100%;
     display: flex;
+    width: 100px;
     flex-direction: column;
-  }
-
-  .main-header-name p {
-    font-size: 2.5rem;
     text-align: left;
-    top: 0;
+    min-width: 100%;
+  }
+  .main-header-name p {
+    font-size: 2.1rem;
+    text-align: left;
+    margin-right: 0;
   }
   .main-header-myname {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     text-align: left;
-    margin: 0;
-    position: relative;
-    left: -14px;
+    margin-top: 4px;
+    margin-right: 0;
   }
   .main-header-profession {
-    font-size: 1.24rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    height: 2.4rem;
     width: 100%;
-    margin: 1rem 0;
   }
   .main-heading-img {
-    max-width: 100%;
     width: 100%;
     height: auto;
-    max-height: 385px;
+    max-height: 400px;
   }
   .bird-container {
     top: 9.5%;
@@ -313,15 +327,126 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
+  .main-img {
+    height: 700px;
+  }
   .main-header {
-    width: 85%;
-    top: 7rem;
+    top: 4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-img {
+    height: 700px;
+  }
+  .main-header {
+    top: 6rem;
+  }
+  .main-header-name p {
+    font-size: 2rem;
+  }
+  .main-header-myname {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    margin-top: 0.7rem;
+    padding: 0;
+  }
+  .main-header-profession {
+    font-size: 1.1rem;
+    padding-left: 0.3rem;
+    width: 100%;
+    height: 2.2rem;
+  }
+  .main-heading-img {
+    height: 310px;
   }
   .bird-container {
-    top: 7%;
+    top: 6%;
+  }
+}
+
+/* @media screen and (max-height: 798px) {
+  .main-img {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-height: 916px) {
+  .main-header {
+    width: 85%;
+  }
+}
+
+@media screen and (max-height: 885px) {
+  .main-img {
+    height: 87vh;
+  }
+  .main-heading-img {
+    width: auto;
+    height: 100%;
+    max-height: ;
   }
 }
 
 @media screen and (max-height: 798px) {
+  .main-img {
+    height: 90vh;
+  }
 }
+
+@media screen and (max-height: 721px) {
+  .main-header {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-header-top {
+    width: 740px;
+    margin: 0 auto;
+  }
+  .main-header {
+    width: 72%;
+  }
+  .main-img {
+    height: 100vh;
+  }
+}
+@media screen and (min-height: 721px) {
+  .main-header-top: {
+  }
+}
+
+@media screen and (max-height: 654px) {
+  .main-header-myname {
+    margin-top: 0.7rem;
+    marign-bottom: 0;
+  }
+  .main-heading-img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-height: 668px) {
+  .main-img {
+    height: 90vh;
+  }
+  .main-heading-img {
+    max-height: 300px;
+  }
+  .bird-container {
+    top: 7%;
+  }
+} */
+
+/* @media screen and (max-height: 885px) {
+  .main-img {
+    height: 87vh;
+  }
+  .main-heading-img {
+    width: auto;
+    height: 100%;
+    max-height: ;
+  }
+} */
