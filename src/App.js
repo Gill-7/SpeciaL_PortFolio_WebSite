@@ -1,18 +1,15 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { useEffect } from "react";
 import "./App.css";
 import Home from "./components/Home";
 
-function App() {
+const App = ({ hideLoader }) => {
+  useEffect(hideLoader, [hideLoader]);
+
   return (
     <>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-        </Switch>
-      </Router>
+      <Home />
     </>
   );
-}
+};
 
 export default App;

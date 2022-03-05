@@ -53,7 +53,7 @@ function Navbar() {
                 style={{ cursor: "pointer" }}
                 onClick={closeSideBar}
               >
-                Services
+                My services
               </p>
             </Link>
           </li>

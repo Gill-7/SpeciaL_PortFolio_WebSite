@@ -217,3 +217,11 @@
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 310px) {
+  .navbar {
+    grid-template-columns: 1fr 0.6fr;
+  }
+  .nav-logo-text {
+    font-size: 1rem;
+  }
+}

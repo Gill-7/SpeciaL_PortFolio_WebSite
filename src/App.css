@@ -7,19 +7,3 @@
 body {
   background-color: #0a192f;
 }
-
-.home,
-.projectspage,
-.skillspage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.skillspage {
-  font-size: 100px;
-}
-
-.projectspage {
-  font-size: 20px;
-}
