@@ -1,12 +1,11 @@
 import React from "react";
 import "./Main.css";
 import Navbar from "../Navbar/Navbar";
-import Slide from "react-reveal/Slide";
 
 function Main() {
   return (
     <div className="main">
-      <img src="./image/aloneTree.jpg" alt="mountain" className="main-img" />
+      <img src="./image/alonetree3.jpg" alt="mountain" className="main-img" />
       <div className="main-header">
         <div className="main-header-top">
           <div className="main-header-name ">
@@ -16,7 +15,7 @@ function Main() {
             <div className="main-header-profession">Front-end Dev</div>
           </div>
           <img
-            src="./image/picture.jpg"
+            src="./image/picture2.jpg"
             alt="dune-arakis"
             className="main-heading-img"
           />

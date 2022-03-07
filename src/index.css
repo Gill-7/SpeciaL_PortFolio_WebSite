@@ -21,7 +21,7 @@ body {
   border: 1.1em solid rgba(0, 0, 0, 0.2);
   border-left: 1.1em solid #fff;
   border-radius: 50%;
-  animation: load8 1s infinite linear;
+  animation: load8 1s linear;
   transition: opacity 0.2s;
 }
 
