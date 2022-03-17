@@ -49,7 +49,7 @@ function Skills() {
             Learning and creating server side languages (MERN stack) projects. I
             have exposure to node.js and python.
           </p>
-          <p className="section--lang--title">Next step in marathon: </p>
+          <p className="section--lang--title">Languages I'm learning: </p>
           <div className="section--lang--name">
             <p>Node.js</p>
             <p>Express</p>
